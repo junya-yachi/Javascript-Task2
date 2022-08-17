@@ -1,0 +1,36 @@
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  gap: 4px;
+  grid-template-areas: 
+  "a a a a"
+  "b c d e"
+  "f g h i"
+  "j k l m"
+  "n o p q"
+  "r r s s";
+}
+
+.result {
+  user-select: none;
+  font-size: 40px;
+  color: white;
+  background: #000;
+  grid-area: a;
+  line-height: 50px;
+  text-align: right;
+}
+
+.allClear {
+  grid-area: r;
+}
+
+.equal {
+  grid-area: s;
+}
